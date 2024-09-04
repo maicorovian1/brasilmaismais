@@ -1,58 +1,73 @@
-body {
-    background-color:#f2c202; /* Cor de fundo para o body */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+body, html {
     margin: 0;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    padding: 0;
     width: 100%;
-    max-width: 1040px; /* Considerando 20px de gap entre as divs */
+    height: 100%;
+    font-family: Arial, sans-serif;
 }
 
-.box {
-    position: relative;
-    flex: 1 1 calc(50% - 20px); /* Ocupa 50% da largura do container menos o gap */
-    height: 500px;
-     /* Para visualização */
-    box-sizing: border-box; /* Inclui a borda no tamanho total */
+.section {
+    height: 100vh;
     background-size: cover;
     background-position: center;
-    margin-bottom: 20px; /* Espaço entre as linhas de imagens */
 }
 
-#box1 {
-    background-image: url('1.png');
+.section1 {
+    background-image: url('Desktop01.jpg');
 }
 
-#box2 {
-    background-image: url('2.png');
+.section2 {
+    background-image: url('Desktop01.jpg');
 }
 
+.section3 {
+    background-image: url('Desktop01.jpg');
+}
+
+.section4 {
+    background-image: url('Desktop01.jpg');
+}
+
+.buttons {
+    display: flex;
+    left: 40%;
+    top: 90%;
+    align-items: center;
+    height: 100vh;
+}
+
+.btn {
+    margin: 0 10px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
 
 .whatsapp-button {
-    position: absolute;
-    top: 95%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px 20px;
-    background-color: #25d366; /* Cor do botão do WhatsApp */
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 }
 
-/* Media query para telas menores */
-@media (max-width: 768px) {
-    .box {
-        flex: 1 1 100%; /* Cada div ocupa 100% da largura em telas menores */
+.whatsapp-button img {
+    width: 50px;
+    height: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+    .section1 {
+        background-image: url('Desktop01.jpg');
+    }
+
+    .section2 {
+        background-image: url('Desktop01.jpg');
+    }
+
+    .section3 {
+        background-image: url('Desktop01.jpg');
+    }
+
+    .section4 {
+        background-image: url('Desktop01.jpg');
     }
 }
