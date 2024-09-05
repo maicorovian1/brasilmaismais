@@ -1,7 +1,6 @@
 body, html {
     margin: 0;
     padding: 0;
-    width: 100%;
     height: 100%;
     font-family: Arial, sans-serif;
 }
@@ -10,64 +9,79 @@ body, html {
     height: 100vh;
     background-size: cover;
     background-position: center;
-}
-
-.section1 {
-    background-image: url('Desktop01.jpg');
-}
-
-.section2 {
-    background-image: url('Desktop01.jpg');
-}
-
-.section3 {
-    background-image: url('Desktop01.jpg');
-}
-
-.section4 {
-    background-image: url('Desktop01.jpg');
-}
-
-.buttons {
     display: flex;
-    left: 40%;
-    top: 90%;
+    justify-content: center;
     align-items: center;
-    height: 100vh;
+    position: relative;
+}
+
+.buttons-container {
+    position: absolute;
+    /* Ajuste manual de posicionamento X e Y */
+    top: 50%; /* Pode ajustar para onde deseja que fiquem os botões */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
 }
 
 .btn {
-    margin: 0 10px;
-    padding: 15px 30px;
-    font-size: 18px;
+    padding: 20px;
+    background-color: transparent;
+    border: none;
     cursor: pointer;
 }
 
-.whatsapp-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-}
-
-.whatsapp-button img {
+.btn img {
     width: 50px;
     height: 50px;
 }
 
-@media only screen and (max-width: 768px) {
-    .section1 {
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.whatsapp-btn img {
+    width: 60px;
+    height: 60px;
+}
+
+/* Responsividade para telas maiores (PC) */
+@media screen and (min-width: 768px) {
+    /* Imagens de fundo para PC */
+    #section1 {
+        background-image: url('Desktop01.jpg');
+    }
+    #section2 {
+        background-image: url('Desktop01.jpg');
+    }
+    #section3 {
+        background-image: url('Desktop01.jpg');
+    }
+    #section4 {
+        background-image: url('Desktop01.jpg');
+    }
+}
+
+/* Responsividade para telas menores (Dispositivos móveis) */
+@media screen and (max-width: 767px) {
+    /* Imagens de fundo para dispositivos móveis */
+    #section1 {
         background-image: url('site01.jpg');
     }
-
-    .section2 {
+    #section2 {
         background-image: url('site02.jpg');
     }
-
-    .section3 {
+    #section3 {
         background-image: url('site01.jpg');
     }
-
-    .section4 {
+    #section4 {
         background-image: url('site01.jpg');
     }
 }
