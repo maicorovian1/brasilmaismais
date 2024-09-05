@@ -69,6 +69,7 @@ body, html {
     margin: 0;
     padding: 0;
     text-align: center;
+    font-size: 5px;
 }
 
 .menu-bar ul li {
