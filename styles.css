@@ -18,8 +18,8 @@ body, html {
 .buttons-container {
     position: absolute;
     /* Ajuste manual de posicionamento X e Y */
-    top: 70%; /* Pode ajustar para onde deseja que fiquem os botões */
-    left: 35%;
+    top: 60%; /* Pode ajustar para onde deseja que fiquem os botões */
+    left: 40%;
     transform: translate(-50%, -50%);
     display: flex;
     gap: 20px;
