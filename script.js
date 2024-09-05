@@ -8,3 +8,19 @@ whatsappButton.addEventListener('click', function() {
     
     window.open(whatsappURL, '_blank');
 });
+
+// JavaScript para rolagem suave até as seções
+const navLinks = document.querySelectorAll('.nav-link');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault(); // Previne o comportamento padrão de pular diretamente
+        const targetId = this.getAttribute('href'); // Pega o id da seção
+        const targetSection = document.querySelector(targetId);
+        
+        // Faz a rolagem suave até a seção
+        targetSection.scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
