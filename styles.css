@@ -56,18 +56,18 @@ body, html {
 
 @media only screen and (max-width: 768px) {
     .section1 {
-        background-image: url('Desktop01.jpg');
+        background-image: url('site01.jpg');
     }
 
     .section2 {
-        background-image: url('Desktop01.jpg');
+        background-image: url('site01.jpg');
     }
 
     .section3 {
-        background-image: url('Desktop01.jpg');
+        background-image: url('site01.jpg');
     }
 
     .section4 {
-        background-image: url('Desktop01.jpg');
+        background-image: url('site01.jpg');
     }
 }
