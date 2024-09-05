@@ -8,16 +8,18 @@
 </head>
 <body>
 
-    <!-- Menu de navegação -->
-    <nav class="menu-bar">
-        <ul>
-            <li><a href="#section1" class="nav-link">DOWNLOAD</a></li>
-            <li><a href="#section2" class="nav-link">MOTORISTA</a></li>
-            <li><a href="#section3" class="nav-link">WHATSAPP</a></li>
-            <li><a href="#section4" class="nav-link">CONTATO</a></li>
-        </ul>
-    </nav>
+    <!-- Menu Hamburguer -->
+    <div class="menu-hamburger">
+        <button class="menu-btn" onclick="toggleMenu()">☰</button> <!-- Ícone do menu -->
+        <div class="menu-links" id="menu">
+            <a href="#section1" class="nav-link">DOWNLOAD</a>
+            <a href="#section2" class="nav-link">MOTORISTA</a>
+            <a href="#section3" class="nav-link">WHATSAPP</a>
+            <a href="#section4" class="nav-link">CONTATO</a>
+        </div>
+    </div>
 
+    <!-- Suas seções -->
     <section id="section1" class="section">
         <div class="buttons-container">
             <button class="btn">
@@ -33,6 +35,7 @@
             </button>
         </a>
     </section>
+    
     <section id="section2" class="section"></section>
     <section id="section3" class="section"></section>
     <section id="section4" class="section"></section>
