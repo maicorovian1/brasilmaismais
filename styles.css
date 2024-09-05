@@ -5,6 +5,7 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
+/* Estilos das seções */
 .section {
     height: 100vh;
     background-size: cover;
@@ -15,11 +16,11 @@ body, html {
     position: relative;
 }
 
+/* Botões principais (Google Play e Apple Store) */
 .buttons-container {
     position: absolute;
-    /* Ajuste manual de posicionamento X e Y */
-    top: 60%; /* Pode ajustar para onde deseja que fiquem os botões */
-    left: 40%;
+    top: 60%; /* Ajuste conforme necessário */
+    left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
     gap: 20px;
@@ -37,6 +38,7 @@ body, html {
     height: 50px;
 }
 
+/* Botão do WhatsApp */
 .whatsapp-btn {
     position: fixed;
     bottom: 20px;
@@ -52,36 +54,66 @@ body, html {
     height: 60px;
 }
 
+/* Menu de navegação */
+.menu-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    z-index: 999;
+}
+
+.menu-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu-bar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu-bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-bar ul li a:hover {
+    color: #f1c40f;
+}
+
 /* Responsividade para telas maiores (PC) */
 @media screen and (min-width: 768px) {
-    /* Imagens de fundo para PC */
     #section1 {
-        background-image: url('Desktop01.jpg');
+        background-image: url('images/Desktop01.jpg');
     }
     #section2 {
-        background-image: url('Desktop01.jpg');
+        background-image: url('images/Desktop02.jpg');
     }
     #section3 {
-        background-image: url('Desktop01.jpg');
+        background-image: url('images/Desktop01.jpg');
     }
     #section4 {
-        background-image: url('Desktop01.jpg');
+        background-image: url('images/Desktop01.jpg');
     }
 }
 
 /* Responsividade para telas menores (Dispositivos móveis) */
 @media screen and (max-width: 767px) {
-    /* Imagens de fundo para dispositivos móveis */
     #section1 {
-        background-image: url('site01.jpg');
+        background-image: url('images/site01.jpg');
     }
     #section2 {
-        background-image: url('site02.jpg');
+        background-image: url('images/site01.jpg');
     }
     #section3 {
-        background-image: url('site01.jpg');
+        background-image: url('images/site01.jpg');
     }
     #section4 {
-        background-image: url('site01.jpg');
+        background-image: url('images/site01.jpg');
     }
 }
