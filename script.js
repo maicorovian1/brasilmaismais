@@ -26,3 +26,20 @@ navLinks.forEach(link => {
         document.getElementById('menu').style.display = 'none';
     });
 });
+// Mostrar ou esconder o botão dependendo da rolagem da página
+window.onscroll = function() {
+    const backToTopButton = document.getElementById('back-to-top');
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTopButton.style.display = "block"; // Mostrar o botão
+    } else {
+        backToTopButton.style.display = "none";  // Esconder o botão
+    }
+};
+
+// Função para rolar a página de volta ao topo
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Rolar suavemente para o topo
+    });
+}

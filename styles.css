@@ -124,3 +124,22 @@ body, html {
         background-image: url('images/site04.jpg');
     }
 }
+
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    display: none; /* Inicialmente escondido */
+    background-color: #f1c40f;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1000;
+}
+
+#back-to-top:hover {
+    background-color: #e67e22;
+}
