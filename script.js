@@ -43,3 +43,20 @@ function scrollToTop() {
         behavior: 'smooth' // Rolar suavemente para o topo
     });
 }
+// Seleciona o botão do dropdown e o menu
+const dropdownBtn = document.querySelector('.dropdown-btn');
+const dropdownMenu = document.querySelector('.dropdown-menu');
+
+// Adiciona o evento de clique para abrir ou fechar o menu
+dropdownBtn.addEventListener('click', function () {
+    dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+});
+
+// Fecha o menu dropdown se clicar fora dele
+window.addEventListener('click', function (event) {
+    if (!event.target.matches('.dropdown-btn')) {
+        if (dropdownMenu.style.display === 'block') {
+            dropdownMenu.style.display = 'none';
+        }
+    }
+});
