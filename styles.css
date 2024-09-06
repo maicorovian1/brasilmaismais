@@ -1,8 +1,48 @@
+/* Estilos gerais */
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: Arial, sans-serif;
+}
+
+/* Estilos do menu hamburguer */
+.menu-hamburger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.menu-btn {
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.menu-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 999;
+}
+
+.menu-links a {
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-links a:hover {
+    background-color: #f1c40f;
 }
 
 /* Estilos das seções */
@@ -16,10 +56,10 @@ body, html {
     position: relative;
 }
 
-/* Botões principais (Google Play e Apple Store) */
+/* Estilos dos botões */
 .buttons-container {
     position: absolute;
-    top: 60%; /* Ajuste conforme necessário */
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -38,7 +78,6 @@ body, html {
     height: 50px;
 }
 
-/* Botão do WhatsApp */
 .whatsapp-btn {
     position: fixed;
     bottom: 20px;
@@ -54,39 +93,6 @@ body, html {
     height: 60px;
 }
 
-/* Menu de navegação */
-.menu-bar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 10px 0;
-    z-index: 999;
-}
-
-.menu-bar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-size: 3px;
-}
-
-.menu-bar ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.menu-bar ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.menu-bar ul li a:hover {
-    color: #f1c40f;
-}
-
 /* Responsividade para telas maiores (PC) */
 @media screen and (min-width: 768px) {
     #section1 {
@@ -96,10 +102,10 @@ body, html {
         background-image: url('images/Desktop02.jpg');
     }
     #section3 {
-        background-image: url('images/Desktop01.jpg');
+        background-image: url('images/Desktop03.jpg');
     }
     #section4 {
-        background-image: url('images/Desktop01.jpg');
+        background-image: url('images/Desktop04.jpg');
     }
 }
 
@@ -109,10 +115,10 @@ body, html {
         background-image: url('images/site01.jpg');
     }
     #section2 {
-        background-image: url('images/site01.jpg');
+        background-image: url('images/site02.jpg');
     }
     #section3 {
-        background-image: url('images/site01.jpg');
+        background-image: url('images/site03.jpg');
     }
     #section4 {
         background-image: url('images/site04.jpg');
