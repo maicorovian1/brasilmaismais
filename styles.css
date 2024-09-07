@@ -59,25 +59,7 @@ body, html {
 /* Estilos dos botões */
 
 
-.btn img {
-    width: 50px;
-    height: 50px;
-}
 
-.whatsapp-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 15px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-.whatsapp-btn img {
-    width: 70px;
-    height: 60px;
-}
 
 /* Responsividade para telas maiores (PC) */
 @media screen and (min-width: 768px) {
@@ -90,6 +72,25 @@ body, html {
     gap: 20px;
 }
 
+.btn img {
+    width: 50px;
+    height: 50px;
+}
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    padding: 15px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.whatsapp-btn img {
+    width: 70px;
+    height: 60px;
+}
 .btn {
     padding: 20px;
     background-color: transparent;
@@ -112,33 +113,48 @@ body, html {
 
 /* Responsividade para telas menores (Dispositivos móveis) */
 @media screen and (max-width: 767px) {
-    .buttons-container {
-        position: absolute;
-        top: 70%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        gap: 20px;
-    }
-    
-    .btn {
-        padding: 20px;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-    #section1 {
-        background-image: url('images/site01.jpg');
-    }
-    #section2 {
-        background-image: url('images/site02.jpg');
-    }
-    #section3 {
-        background-image: url('images/site03.jpg');
-    }
-    #section4 {
-        background-image: url('images/site04.jpg');
-    }
+.buttons-container {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+}
+.btn img {
+    width: 50px;
+    height: 50px;
+}
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    padding: 15px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.whatsapp-btn img {
+    width: 70px;
+    height: 60px;
+}
+.btn {
+    padding: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+#section1 {
+    background-image: url('images/site01.jpg');
+}
+#section2 {
+    background-image: url('images/site02.jpg');
+}
+#section3 {
+    background-image: url('images/site03.jpg');
+}
 
 
     /* Container do menu */
@@ -221,7 +237,7 @@ body, html {
     bottom: 30px;
     left: 30px;
     display: none; /* Inicialmente escondido */
-    background-color: #f1c40f;
+    background-color: #089b37;
     color: white;
     border: none;
     padding: 15px;
@@ -232,5 +248,5 @@ body, html {
 }
 
 #back-to-top:hover {
-    background-color: #e67e22;
+    background-color: #134121;
 }
