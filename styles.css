@@ -71,6 +71,16 @@ body, html {
     display: flex;
     gap: 20px;
 }
+.botaomotorista {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 200px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+}
 
 .btn img {
     width: 50px;
@@ -114,6 +124,14 @@ body, html {
 /* Responsividade para telas menores (Dispositivos móveis) */
 @media screen and (max-width: 767px) {
 .buttons-container {
+    position: absolute;
+    top: 63%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+}
+.botaomotorista {
     position: absolute;
     top: 63%;
     left: 56%;
