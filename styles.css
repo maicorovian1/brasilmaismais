@@ -74,12 +74,28 @@ body, html {
 .botaomotorista {
     position: absolute;
     top: 20%;
-    left: 50%;
-    width: 200px;
-    height: 60px;
-    transform: translate(-50%, -50%);
-    display: flex;
-    gap: 20px;
+    left: 44%;
+    padding: 15px 30px; /* Aumenta o espaço interno do botão */
+    background-color: #329de9; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    text-align: center; /* Centraliza o texto */
+    border: 2px solid #28a745; /* Borda com a mesma cor do fundo */
+    border-radius: 25px; /* Cantos arredondados */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+    cursor: pointer; /* Mostra o cursor de 'mão' ao passar o mouse */
+    transition: background-color 0.3s ease; /* Animação suave ao mudar de cor */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+.botaomotorista:hover {
+    background-color: #220863; /* Muda a cor do fundo ao passar o mouse */
+    border-color: #e7ede9; /* Muda a cor da borda ao passar o mouse */
+}
+
+.botaomotorista a:visited {
+    color: white; /* Mantém a cor branca mesmo após o clique */
+    text-decoration: none; /* Remove o sublinhado */
 }
 
 .btn img {
