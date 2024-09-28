@@ -1,0 +1,14 @@
+/* styles.css */
+.highlight {
+    font-size: 44px; /* Aumenta o tamanho da fonte */
+    font-weight: bold; /* Deixa em negrito */
+    color: #07b113; /* Muda a cor para vermelho */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Adiciona uma sombra ao texto */
+}
+
+.value-card {
+    background-color: #f0f0f0; /* Fundo claro para destacar */
+    padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+}
